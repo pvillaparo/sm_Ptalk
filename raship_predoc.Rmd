@@ -1,10 +1,8 @@
 ---
 title: "¿Cómo iniciar en la academia?"
-subtitle: RAship como medio de mobilidad académica
 author: "Paola Villa Paro"
 date: "Princeton University | [Bio](https://pvillaparo.github.io)"
 output:
-  #encoding=encoding, output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
   xaringan::moon_reader:
     css:
     - default
@@ -17,9 +15,11 @@ output:
       countIncrementalSlides: no
   html_document:
     df_print: paged
+  beamer_presentation: default
   pdf_document: default
-  #revealjs::revealjs_presentation: default
-  #knit: (function(input_file, encoding) { out_dir <- 'docs'; rmarkdown::render(input_file,
+  slidy_presentation: default
+  ioslides_presentation: default
+subtitle: RAship como medio de mobilidad académica
 ---
 
 ```{r setup, include=FALSE}
