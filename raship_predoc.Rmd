@@ -1,16 +1,25 @@
 ---
 title: "¿Cómo iniciar en la academia?"
-subtitle: "RAship como medio de mobilidad académica"
+subtitle: RAship como medio de mobilidad académica
 author: "Paola Villa Paro"
-date: "Princeton University | [Bio](https://pvillaparo.github.io)" #"`r format(Sys.time(), '%d %B %Y')`"
+date: "Princeton University | [Bio](https://pvillaparo.github.io)"
 output:
+  #encoding=encoding, output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
   xaringan::moon_reader:
-    css: [default, metropolis, metropolis-fonts] 
+    css:
+    - default
+    - metropolis
+    - metropolis-fonts
     lib_dir: libs
     nature:
       highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
+      highlightLines: yes
+      countIncrementalSlides: no
+  html_document:
+    df_print: paged
+  pdf_document: default
+  #revealjs::revealjs_presentation: default
+  #knit: (function(input_file, encoding) { out_dir <- 'docs'; rmarkdown::render(input_file,
 ---
 
 ```{r setup, include=FALSE}
